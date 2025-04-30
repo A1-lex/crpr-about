@@ -1,0 +1,4 @@
+FROM nginx:1.25.2-alpine
+COPY . /usr/share/nginx/html
+EXPORT 80
+CMD ["nginx", "-g", "daemon off;"]
